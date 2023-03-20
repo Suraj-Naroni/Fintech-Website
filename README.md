@@ -1,2 +1,2 @@
-# Fintech-Website-Template
-A responsive website template.
+# Fintech-Website
+A responsive website.
