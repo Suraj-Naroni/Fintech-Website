@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&family=Poppins:wght@400;600;800&display=swap");
+
+/* ********************************************Basic Styling***************************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* ------62.5% = 10px = 1rem ------ */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+h1,
+h2,
+p {
+  margin: 1.6rem 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+section {
+  padding: 100px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* **************************************** Utility Classes **************************************** */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+/* *************************** Header Section ************************* */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 105vh;
+  margin-top: -20px;
+}
+
+.logo h1 {
+  color: #54b435;
+  margin: 0;
+  position: relative;
+}
+
+nav {
+  padding: 2% 8%;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+nav.sticky {
+  padding: 5px 100px;
+  background-color: rgba(48, 48, 48, 0.863);
+}
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  margin: 1rem 2.5rem;
+}
+nav ul li a {
+  position: relative;
+}
+li a:hover {
+  color: #54b435;
+  transition: 0.4s ease-in-out;
+}
+
+nav box-icon {
+  margin: 1rem 0;
+  display: none;
+}
+
+/* ************************************************ Header Content ********************************** */
+.header-content {
+  width: 50%;
+  position: relative;
+  top: 18%;
+  left: 8%;
+}
+
+header h1 {
+  color: whitesmoke;
+}
+header p {
+  color: whitesmoke;
+}
+
+form {
+  margin: 2.5rem 0;
+}
+
+input {
+  font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  width: 40%;
+}
+
+input[type="submit"] {
+  background-color: #54b435;
+  border: none;
+  border-radius: 4px;
+  color: rgba(245, 245, 245, 0.8);
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* ******************************************** About ***************************************** */
+
+.about {
+  padding: 5%;
+}
+.about-left,
+.about-middle,
+.about-right {
+  flex-basis: 25%;
+}
+.about-left img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.about .btn {
+  background-color: #54b435;
+  border: none;
+  border-radius: 4px;
+  color: rgba(245, 245, 245, 0.8);
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+/* ------------------------------------------- About 2 -------------------------------------------- */
+
+.about2 {
+  background: #222;
+  color: whitesmoke;
+}
+
+.about2 h1 {
+  margin-top: 7rem;
+}
+
+.about2-left {
+  flex-basis: 50%;
+}
+.about2-right {
+  flex-basis: 30%;
+}
+
+.about2 .card {
+  background-color: #ccc;
+  color: #222;
+  padding: 3rem 5rem;
+  margin: 1.6rem;
+  text-align: center;
+}
+
+/* ------------------------------------------------------- Process -------------------------------------- */
+
+.process .row {
+  justify-content: center;
+}
+
+.process h1 {
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.process h2 {
+  color: #54b435;
+  text-align: center;
+}
+
+.box1,
+.box2,
+.box3 {
+  box-shadow: 4px 4px 10px 2px #ccc;
+  text-align: center;
+  margin: 0 2rem;
+  padding: 1rem;
+}
+
+/* ******************************************* Testimonial ********************************* */
+.testimonial {
+  background: #222;
+  color: whitesmoke;
+  text-align: center;
+}
+.testimonial .test {
+  background-color: #505050;
+  padding: 2rem 6rem;
+  margin: 0 3rem;
+}
+.test-content p {
+  font-size: 16px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+.test .img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.test img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------Contact Us ------------------------------------- */
+.contact .row {
+  justify-content: center;
+}
+
+.contact form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact textarea {
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 1.3rem;
+  font-family: "poppins", sans-serif;
+  height: 150px;
+  margin: 1.2rem 0;
+  padding: 1.2rem 2rem;
+  resize: none;
+  width: 40%;
+}
+/* **************************************************Footer ************************************ */
+footer {
+  background-color: #222;
+  color: whitesmoke;
+  height: 5rem;
+  line-height: 50px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.3rem;
+}
+/* ****************************************** Media-Queries ********************************  */
+
+/* FOR MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+  header {
+    height: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  nav .logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  nav box-icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3.6rem;
+  }
+
+  nav ul {
+    width: 100%;
+    display: none;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 2% 0;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: #ccc;
+    font-size: 18px;
+  }
+
+  /* header-content */
+
+  .header-content {
+    width: 100%;
+    /* top: 15%; */
+    left: 0;
+    text-align: center;
+    padding: 0 1rem;
+    margin: auto;
+  }
+  .header-content h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin: 30% auto;
+  }
+  .header-content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ccc;
+    display: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin: 1.2rem auto;
+    text-align: center;
+  }
+
+  /* ABOUT */
+
+  .about {
+    text-align: center;
+  }
+  .about p {
+    text-align: center;
+  }
+  .about-left img {
+    width: 300px;
+  }
+
+  .about2 .row {
+    text-align: center;
+    width: 100%;
+  }
+  .about2-left p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .about2-left {
+    width: 80%;
+  }
+
+  .about2-left h1,
+  .about2-left h2 {
+    text-align: center;
+  }
+
+  .about2-right .row {
+    width: 80%;
+  }
+
+  /* Process */
+
+  .process .row {
+    width: 100%;
+    text-align: center;
+  }
+  .process .box2 {
+    margin: 2rem;
+  }
+
+  /* Testimonial */
+
+  .testimonial .row {
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial .test {
+    margin: 2rem 0;
+  }
+  /* Contact */
+
+  .contact .row {
+    width: 100%;
+  }
+  .contact .row textarea {
+    width: 90%;
+  }
+}
+
+/* -----------------------FOR TAB -------------*/
+
+@media only screen and (min-width: 561px) and (max-width: 992px) {
+  header {
+    height: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  nav .logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  nav box-icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3.6rem;
+  }
+
+  nav ul {
+    /* background-color: rgba(245, 245, 245, 0.8); */
+    display: none;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 2% 0;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: rgba(245, 245, 245, 0.8);
+    font-size: 25px;
+  }
+
+  /* header-content */
+
+  .header-content {
+    width: 80%;
+    /* top: 15%; */
+    left: 0;
+    text-align: center;
+    padding: 0 1rem;
+    margin: auto;
+  }
+  .header-content h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin: 20% auto 10%;
+  }
+  .header-content p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ccc;
+    /* display: none; */
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin: 1.2rem auto;
+    text-align: center;
+  }
+
+  /* ABOUT */
+
+  .about {
+    text-align: center;
+  }
+  .about p {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 35px;
+  }
+  .about-left img {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .about .btn {
+    background-color: #54b435;
+    border: none;
+    border-radius: 8px;
+    color: rgba(245, 245, 245, 0.8);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 30px 0;
+    text-transform: uppercase;
+  }
+  .about2 .row {
+    text-align: center;
+    width: 100%;
+  }
+  .about2-left p {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .about2-left {
+    width: 70%;
+  }
+
+  .about2-left h1,
+  .about2-left h2 {
+    text-align: center;
+  }
+
+  .about2-right .row {
+    width: 80%;
+  }
+
+  /* Process */
+
+  .process .row {
+    width: 60%;
+    text-align: center;
+  }
+  .process .box1,
+  .process .box2,
+  .process .box3 {
+    margin: 3rem;
+    padding: 5%;
+  }
+
+  /* Testimonial */
+
+  .testimonial .row {
+    width: 60%;
+    text-align: center;
+  }
+  .testimonial .test {
+    margin: 2rem 0;
+  }
+  /* Contact */
+
+  .contact .row {
+    width: 80%;
+  }
+  .contact textarea {
+    width: 90%;
+  }
+}
